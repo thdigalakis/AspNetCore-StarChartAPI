@@ -29,7 +29,7 @@ namespace StarChart.Controllers
             }
 
             
-            return 
+            return NotFound();
         }
 
         [HttpGet ("{name}")]
@@ -39,11 +39,12 @@ namespace StarChart.Controllers
             {
                 return NotFound();
             }
+            return NotFound(); 
         }
 
         public IActionResult GetAll()
         {
-            return ();
+            return NotFound();
         }
     }
 }
